@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0646395348C42368E46036C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABB53ABED2F4A4A8D866AA4 /* libPods.a */; };
 		C186769219658316007E3BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C186769119658316007E3BB9 /* Foundation.framework */; };
 		C186769419658316007E3BB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C186769319658316007E3BB9 /* CoreGraphics.framework */; };
 		C186769619658316007E3BB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C186769519658316007E3BB9 /* UIKit.framework */; };
@@ -19,6 +20,9 @@
 		C18676AD19658316007E3BB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C186769519658316007E3BB9 /* UIKit.framework */; };
 		C18676B519658316007E3BB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C18676B319658316007E3BB9 /* InfoPlist.strings */; };
 		C18676B719658316007E3BB9 /* IBTImagePreviewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C18676B619658316007E3BB9 /* IBTImagePreviewerTests.m */; };
+		C18676C31965832E007E3BB9 /* IBTImagePreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C18676C21965832E007E3BB9 /* IBTImagePreviewer.m */; };
+		C18676C619658535007E3BB9 /* IBTProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C18676C519658535007E3BB9 /* IBTProgress.m */; };
+		C18676C919658688007E3BB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18676C819658688007E3BB9 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5ABB53ABED2F4A4A8D866AA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70ED9C5B76E74E29B9AF1E06 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C186768E19658316007E3BB9 /* IBTImagePreviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBTImagePreviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C186769119658316007E3BB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C186769319658316007E3BB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,12 @@
 		C18676B219658316007E3BB9 /* IBTImagePreviewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBTImagePreviewerTests-Info.plist"; sourceTree = "<group>"; };
 		C18676B419658316007E3BB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C18676B619658316007E3BB9 /* IBTImagePreviewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTImagePreviewerTests.m; sourceTree = "<group>"; };
+		C18676C11965832E007E3BB9 /* IBTImagePreviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTImagePreviewer.h; sourceTree = "<group>"; };
+		C18676C21965832E007E3BB9 /* IBTImagePreviewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTImagePreviewer.m; sourceTree = "<group>"; };
+		C18676C419658535007E3BB9 /* IBTProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTProgress.h; sourceTree = "<group>"; };
+		C18676C519658535007E3BB9 /* IBTProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTProgress.m; sourceTree = "<group>"; };
+		C18676C719658688007E3BB9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C18676C819658688007E3BB9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 				C186769419658316007E3BB9 /* CoreGraphics.framework in Frameworks */,
 				C186769619658316007E3BB9 /* UIKit.framework in Frameworks */,
 				C186769219658316007E3BB9 /* Foundation.framework in Frameworks */,
+				B0646395348C42368E46036C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				C18676B019658316007E3BB9 /* IBTImagePreviewerTests */,
 				C186769019658316007E3BB9 /* Frameworks */,
 				C186768F19658316007E3BB9 /* Products */,
+				70ED9C5B76E74E29B9AF1E06 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +114,7 @@
 				C186769319658316007E3BB9 /* CoreGraphics.framework */,
 				C186769519658316007E3BB9 /* UIKit.framework */,
 				C18676AA19658316007E3BB9 /* XCTest.framework */,
+				5ABB53ABED2F4A4A8D866AA4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,8 +122,13 @@
 		C186769719658316007E3BB9 /* IBTImagePreviewer */ = {
 			isa = PBXGroup;
 			children = (
+				C18676C01965832E007E3BB9 /* ImagePreviewer */,
 				C18676A019658316007E3BB9 /* AppDelegate.h */,
 				C18676A119658316007E3BB9 /* AppDelegate.m */,
+				C18676C719658688007E3BB9 /* ViewController.h */,
+				C18676C819658688007E3BB9 /* ViewController.m */,
+				C18676C419658535007E3BB9 /* IBTProgress.h */,
+				C18676C519658535007E3BB9 /* IBTProgress.m */,
 				C18676A319658316007E3BB9 /* Images.xcassets */,
 				C186769819658316007E3BB9 /* Supporting Files */,
 			);
@@ -144,6 +164,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C18676C01965832E007E3BB9 /* ImagePreviewer */ = {
+			isa = PBXGroup;
+			children = (
+				C18676C11965832E007E3BB9 /* IBTImagePreviewer.h */,
+				C18676C21965832E007E3BB9 /* IBTImagePreviewer.m */,
+			);
+			path = ImagePreviewer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C18676BA19658316007E3BB9 /* Build configuration list for PBXNativeTarget "IBTImagePreviewer" */;
 			buildPhases = (
+				0D26EFEFAADE4974B03D698B /* Check Pods Manifest.lock */,
 				C186768A19658316007E3BB9 /* Sources */,
 				C186768B19658316007E3BB9 /* Frameworks */,
 				C186768C19658316007E3BB9 /* Resources */,
+				AF2305B5FD96434BB62D6708 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,13 +265,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D26EFEFAADE4974B03D698B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF2305B5FD96434BB62D6708 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C186768A19658316007E3BB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18676C619658535007E3BB9 /* IBTProgress.m in Sources */,
 				C18676A219658316007E3BB9 /* AppDelegate.m in Sources */,
+				C18676C31965832E007E3BB9 /* IBTImagePreviewer.m in Sources */,
 				C186769E19658316007E3BB9 /* main.m in Sources */,
+				C18676C919658688007E3BB9 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +423,7 @@
 		};
 		C18676BB19658316007E3BB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70ED9C5B76E74E29B9AF1E06 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -369,6 +437,7 @@
 		};
 		C18676BC19658316007E3BB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70ED9C5B76E74E29B9AF1E06 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -439,6 +508,7 @@
 				C18676BC19658316007E3BB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C18676BD19658316007E3BB9 /* Build configuration list for PBXNativeTarget "IBTImagePreviewerTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +517,7 @@
 				C18676BF19658316007E3BB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,6 @@
 //
-//  JTImagePreviewer.m
-//  JobTalk
+//  IBTImagePreviewer.m
+//  IBTImagePreviewer
 //
 //  Created by Xummer on 14-7-1.
 //  Copyright (c) 2014年 BST. All rights reserved.
@@ -8,11 +8,11 @@
 
 #define PRE_IMAGE_SVAE_BTN_WIDTH    (44)
 
-#import "JTImagePreviewer.h"
+#import "IBTImagePreviewer.h"
 #import "UIImageView+WebCache.h"
-#import "JTProgress.h"
+#import "IBTProgress.h"
 
-@interface JTImagePreviewer ()
+@interface IBTImagePreviewer ()
 <
     UIScrollViewDelegate
 >
@@ -33,7 +33,7 @@
 
 @end
 
-@implementation JTImagePreviewer
+@implementation IBTImagePreviewer
 
 #pragma mark - Life Cycle
 - (id)initWithViewController:(UIViewController *)viewController
@@ -101,7 +101,7 @@
     self.bgView = [[UIView alloc] init];
     _bgView.frame = self.bounds;
     _bgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    _bgView.backgroundColor = [UIColor colorWithW:0 a:.8];
+    _bgView.backgroundColor = [UIColor colorWithWhite:0 alpha:.8];
     _tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
     [_bgView addGestureRecognizer:_tapGestureRecognizer];
     
@@ -148,7 +148,7 @@
 
 - (void)save {
     if (_imageView.image) {
-        [JTProgress showProgressLabel:[JTCommon localizableString:@"Saving..."]];
+        [IBTProgress showProgressLabel:NSLocalizedString(@"Saving...", nil)];
         UIImageWriteToSavedPhotosAlbum(_imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     }
 }
@@ -157,6 +157,7 @@
     self.userInteractionEnabled = NO;
     [UIView animateWithDuration:.2f
                      animations:^{
+                         _imageView.frame = _startRect;
                          self.alpha = 0;
                      }
                      completion:^(BOOL finished) {
@@ -175,10 +176,12 @@
         [self.viewController.view addSubview:self];
     }
     
+    _imageView.frame = _startRect;
     
     [UIView animateWithDuration:.2f
                      animations:^{
                          self.alpha = 1;
+                         _imageView.frame = _bgView.bounds;
                      }
                      completion:^(BOOL finished) {
                          self.userInteractionEnabled = YES;
@@ -190,7 +193,7 @@
 didFinishSavingWithError:(NSError *)error
   contextInfo:(void *)contextInfo
 {
-    [JTProgress hideHUDWithText:[JTCommon localizableString:@"Image saved"]];
+    [IBTProgress hideHUDWithText:NSLocalizedString(@"Image saved", nil)];
 }
 
 #pragma mark - UIScrollViewDelegate
